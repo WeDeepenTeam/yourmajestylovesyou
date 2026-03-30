@@ -294,7 +294,8 @@ h3 {
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select {
   width: 100%;
   font-family: var(--font-body);
   font-size: 1rem;
@@ -308,6 +309,19 @@ h3 {
   transition: border-color 0.3s ease, background 0.3s ease;
 }
 
+.contact-form select {
+  appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23c4a882' fill='none' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1.1rem center;
+}
+
+.contact-form select option {
+  background: #1a0505;
+  color: var(--color-cream);
+}
+
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: var(--color-cream-muted);
@@ -315,9 +329,32 @@ h3 {
 }
 
 .contact-form input:focus,
-.contact-form textarea:focus {
+.contact-form textarea:focus,
+.contact-form select:focus {
   border-color: rgba(204, 0, 0, 0.6);
-  background: rgba(255, 255, 255, 0.09);
+  background-color: rgba(255, 255, 255, 0.09);
+}
+
+.form-checkbox {
+  text-align: left;
+}
+
+.form-checkbox label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--color-cream-muted);
+  line-height: 1.6;
+}
+
+.form-checkbox input[type="checkbox"] {
+  width: auto;
+  flex-shrink: 0;
+  margin-top: 0.3rem;
+  accent-color: var(--color-red-glow);
 }
 
 .contact-form textarea {
