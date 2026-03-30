@@ -11,6 +11,18 @@
 </head>
 <body>
 
+  <!-- Thank you message after form submit -->
+  <script>
+    if (window.location.search.includes('sent=true')) {
+      window.addEventListener('DOMContentLoaded', function() {
+        var form = document.querySelector('.contact-form');
+        if (form) {
+          form.innerHTML = '<div class="thank-you"><h3>Thank you.</h3><p>I\'ve received your message. If we\'re aligned, you\'ll hear from me.</p></div>';
+        }
+      });
+    }
+  </script>
+
   <!-- HERO -->
   <section class="hero">
     <div class="hero-overlay"></div>
@@ -92,7 +104,7 @@
         <!-- Formsubmit config -->
         <input type="hidden" name="_subject" value="New inquiry from Your Majesty Loves You">
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://yourmajestylovesyou.com?sent=true">
+        <input type="hidden" name="_next" value="http://yourmajestylovesyou.com?sent=true">
         <input type="text" name="_honey" style="display:none">
 
         <div class="form-group">
