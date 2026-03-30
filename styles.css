@@ -281,6 +281,61 @@ h3 {
 
 /* ---- Button ---- */
 
+/* ---- Contact Form ---- */
+
+.contact-form {
+  max-width: 480px;
+  margin: 2.5rem auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-white);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(139, 0, 0, 0.35);
+  border-radius: 8px;
+  padding: 0.9rem 1.1rem;
+  outline: none;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--color-cream-muted);
+  opacity: 0.7;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: rgba(204, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form .btn {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  padding: 1.1rem 2.5rem;
+}
+
+/* ---- Button ---- */
+
 .btn {
   display: inline-block;
   font-family: var(--font-body);

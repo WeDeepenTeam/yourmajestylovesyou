@@ -20,7 +20,7 @@
       </div>
       <h1>Your Majesty Loves You</h1>
       <p class="hero-sub">Congratulations. You've arrived.</p>
-      <a href="mailto:c@wedeepen.com?subject=Inquiry&body=Hi%20Your%20Majesty%2C" class="btn">Start a Conversation</a>
+      <a href="#contact" class="btn">Start a Conversation</a>
     </div>
   </section>
 
@@ -82,13 +82,35 @@
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="section section-cta">
+  <!-- CTA + FORM -->
+  <section id="contact" class="section section-cta">
     <div class="container">
       <h2>Start Here</h2>
       <p class="body-text">Come introduce yourself. Court me&hellip; and we'll see.</p>
+
+      <form class="contact-form" action="https://formsubmit.co/c@wedeepen.com" method="POST">
+        <!-- Formsubmit config -->
+        <input type="hidden" name="_subject" value="New inquiry from Your Majesty Loves You">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://yourmajestylovesyou.com?sent=true">
+        <input type="text" name="_honey" style="display:none">
+
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your email" required>
+        </div>
+        <div class="form-group">
+          <input type="text" name="referred_by" placeholder="Who referred you?">
+        </div>
+        <div class="form-group">
+          <textarea name="message" rows="4" placeholder="What do you desire to feel? How do you wish to relax and play?"></textarea>
+        </div>
+        <button type="submit" class="btn">Start a Conversation</button>
+      </form>
+
       <p class="closing">Love,<br><span>Your Majesty</span></p>
-      <a href="mailto:c@wedeepen.com?subject=Inquiry&body=Hi%20Your%20Majesty%2C" class="btn">Start a Conversation</a>
     </div>
   </section>
 
